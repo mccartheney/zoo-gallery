@@ -13,7 +13,12 @@ from animals import animals
 types = set(animal["type"] for animal in animals)
 names = set(animal["name"] for animal in animals)
 
+# function to search animals by contentKey and contentValue
 def searchFor (contentKey, contentValue) :
+    #loop throgh animals array
+    # first animal, means i want all obj
+    # for animal in animals, loop in animals array
+    # if animal[contentKey] == contentValue, if found one animal with the same values as arguments return that animal
     return [animal for animal in animals if animal[contentKey] == contentValue]
 
 # funtion to return animals by type
