@@ -1,0 +1,16 @@
+.animalCard{
+    width: 280px;
+    height: 280px;
+    background-color: aqua;
+    
+}
+.animals{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.animals name{
+    
+}

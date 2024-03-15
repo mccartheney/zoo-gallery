@@ -1,0 +1,12 @@
+.animalPage {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(4px);
+    display: none;
+}
+
+.animalPage img {
+    width: 100px;
+    height: 100px;
+}
