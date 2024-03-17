@@ -1,7 +1,7 @@
 # import fast api
 # router for route the app
 # request for give info when the user request info
-from fastapi import APIRouter, Request
+from fastapi import APIRouter
 
 # import animals (database)
 from animals import animals

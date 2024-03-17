@@ -11,14 +11,14 @@ class animalCard {
     // rendImages method
     renderImages(data) {
       // clear animals content
-      document.querySelector(".animals").innerHTML = "";
+      document.querySelector(".main_animals").innerHTML = "";
 
       // loop through animals
       for (let i = 0; i < data.length; i++) {
         // create card
         const card = document.createElement("div");
         // add class too card
-        card.classList.add("animalCard");
+        card.classList.add("main_animals_animalCard");
         // add image tag and p to card
         card.innerHTML = `
             <img src="${data[i].src}" alt="${data[i].name}" />
@@ -31,10 +31,14 @@ class animalCard {
         }
 
         // append card to animals 
-        document.querySelector(".animals").appendChild(card)
+        document.querySelector(".main_animals").appendChild(card)
         
       }
     }
+
+    showAll(data) {
+      this.renderImages(data)
+    } 
 }
     
 // export animal Card

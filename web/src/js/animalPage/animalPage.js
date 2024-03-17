@@ -6,29 +6,29 @@ class animalPage {
 
 
     popUp(data){
-        document.querySelector('.animalPage').innerHTML = ''
-        document.querySelector('.animalPage').style.display = "flex"
+        document.querySelector('.main_animalPage').innerHTML = ''
+        document.querySelector('.main_animalPage').style.display = "flex"
 
         let content = document.createElement('div')
         content.classList.add('popUp')
         content.innerHTML = `
             <img src = '${data.src}' alt='${data.name}' />
-            <h2> Name: ${data.name} </h2>
-            <p> Description: ${data.description} </p>
-            <p> Age: ${data.maximum_age} </p>
-            <p> Type: ${data.type} </p>
+            <h2>This animal is ${data.name} </h2>
+            <p> ${data.description} </p>
+            <p>The maximum age is ${data.maximum_age} </p>
+            <p> ${data.type} </p>
           `
         let close = document.createElement('button')
         close.onclick = () => {
-            document.querySelector('.animalPage').innerHTML = '';
-            document.querySelector('.animalPage').style.display = "none"
+            document.querySelector('.main_animalPage').innerHTML = '';
+            document.querySelector('.main_animalPage').style.display = "none"
 
         }
-        close.textContent = 'X'
+        close.textContent = 'X';
         content.appendChild(close);
 
         
-          document.querySelector('.animalPage').appendChild(content)
+          document.querySelector('.main_animalPage').appendChild(content)
     }
 
 

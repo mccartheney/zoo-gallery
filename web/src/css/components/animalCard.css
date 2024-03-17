@@ -1,16 +1,23 @@
-.animalCard{
-    width: 280px;
-    height: 280px;
-    background-color: aqua;
-    
-}
-.animals{
+.main_animals{
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
     overflow-y: scroll;
     height: 100vh;
+    width: calc(100vw - 280px);
 }
 
-.animals name{
-    
+.main_animals_animalCard{
+    width: calc(100%/3);
+    height: 25vw;
+    margin-bottom: 40px;
+}
+
+.main_animals_animalCard img {
+    width: 100%;
+    height: 100%;
+}
+
+.main_animals_animalCard p{
+    color: white;
 }
