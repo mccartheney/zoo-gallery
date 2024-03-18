@@ -4,8 +4,11 @@ import animalPage from "../animalPage/animalPage.js";
 class animalCard {
     // get data in contructor 
     constructor(data) {
-      // call render Image with data
-      this.renderImages(data)
+      if (data.error) {
+        window.alert("this animal dont exist")
+      }else {
+        this.renderImages(data)
+      }
     }
 
     // rendImages method

@@ -19,8 +19,8 @@ class typeButton {
 
     // method to create button 
     createButton (type) {
-        let imageSrc = `../src/images/${type}.png`;
-
+        let imageSrc = `./images/${type}.png`;
+        
         // create button, add content and add class
         let button = document.createElement("button");
         button.innerHTML = `
@@ -32,10 +32,6 @@ class typeButton {
         button.onclick = () => {
             this.searchAndGenerateType(type);
         }
-
-        const img = document.createElement("img");
-        img.setAttribute("src",imageSrc)
-        document.body.appendChild(img);
 
         // append button to html
         document.querySelector(".main_search_buttonTypes").appendChild(button);

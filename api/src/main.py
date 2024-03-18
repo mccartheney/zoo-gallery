@@ -15,12 +15,13 @@ app.include_router(router=api_router)
 # origins is the links that api will give info
 origins = [
     "http://localhost:5500",
+    "http://0.0.0.0:5500"
 ]
 
 # middleware is for api comunication
 app.add_middleware(
     middleware_class=CORSMiddleware,
-    allow_origins=origins, # accept only origins from origins array
+    allow_origins="*", # accept only origins from origins array
     allow_methods=["GET"], # accept only get methods 
 )
 
