@@ -1,2 +1,5 @@
-.vscode
-venv
+# Ignore venv folder
+venv/
+
+# Ignore .vscode folder
+.vscode/
