@@ -47,6 +47,8 @@
     background: #2f2b3a;
     color: white;
     transition: .5s;
+    border: 1px solid whitesmoke;
+
 }
 
 .main_search_form input:focus {
