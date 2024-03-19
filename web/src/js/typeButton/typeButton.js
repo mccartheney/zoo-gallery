@@ -23,15 +23,15 @@ class typeButton {
         
         // create button, add content and add class
         let button = document.createElement("button");
+        button.classList.add("main_search_buttonTypes_buttonType");
         button.innerHTML = `
             <img src="${imageSrc}" alt="${type}">${type}
         `;
-        button.classList.add("main_search_buttonTypes_buttonType");
 
         // on click button call method to create button
         button.onclick = () => {
             this.searchAndGenerateType(type);
-        }
+        };
 
         // append button to html
         document.querySelector(".main_search_buttonTypes").appendChild(button);
@@ -42,10 +42,10 @@ class typeButton {
         // loop through data
         for (let i = 0; i < data.length; i++) {
             // create button
-            this.createButton(data[i])
-        }
-    }
+            this.createButton(data[i]);
+        };
+    };
+};
 
-}
-
+// export typeButton
 export default typeButton;
